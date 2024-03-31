@@ -44,6 +44,6 @@ resource "aws_elb" "jenkins_lb" {
         Application = "jenkins"
     }
 }
-  output "load_balancer_dns_name" {
+  output "load-balancer-ip" {
     value = "aws_elb.jenkins_lb.dns_name"
   }
